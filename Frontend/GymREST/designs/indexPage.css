@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.Main {
+    width: calc(100vw - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    position: relative; 
+    text-align: center;
+    margin-left: 180px;
+}
+
+.jommik-txt {
+    font-size: 4rem;
+    color: #fff;
+    margin: 0;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.description-txt {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 20px 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.full-screen-image {
+    width: 87vw; 
+    height: 100vh;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+
+}
+
+.start-btn {
+    padding: 12px 25px;
+    background-color: #942fa3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    z-index: 3;
+    position: relative;
+}
+
+.start-btn:hover {
+    background-color: #942fa3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 69, 0, 0.4);
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 3;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.login-btn:hover {
+    background-color: #62d09374;
+    color: #fff;
+    transform: scale(1.05);
+}
+.logOut-btn {
+    padding: 10px 20px;
+    background-color: #b04d4d;
+    color: #e2cdcd;
+    border: 1px solid #cfbcbc;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 3;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.logOut-btn:hover {
+    background-color: #bd292974;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 3;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #942fa3;
+    color: #fff;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

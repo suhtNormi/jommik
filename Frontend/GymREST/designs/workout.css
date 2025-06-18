@@ -1,0 +1,14 @@
+button,
+input {
+  transition: all 0.3s ease-in-out;
+}
+
+
+button:hover,
+button:focus {
+  transform: translateY(-2px);
+}
+input:focus {
+  border-color: #6b46c1;
+  box-shadow: 0 0 0 3px rgba(107, 70, 193, 0.4);
+}

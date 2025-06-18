@@ -1,0 +1,154 @@
+/* õlad on vaja teha */
+
+
+.silhouette-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .silhouette-container {
+    position: relative;
+    width: 400px;
+    height: 800px;
+    background-color: #f0f0f0;
+    display: grid;
+  }
+  
+  .body-part {
+    position: absolute;
+    border: 1px solid #000;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+  
+  /* Muscle groups styling */
+  .deltoid {
+    top: 100px;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .deltoid.left {
+    left: 80px;
+  }
+  
+  .deltoid.right {
+    right: 80px;
+  }
+  
+  .chest {
+    top: 140px;
+    width: 125px;
+    height: 120px;
+  }
+  
+  .chest.left {
+    left: 75px;
+  }
+  
+  .chest.right {
+    right: 75px;
+  }
+  
+  .abs {
+    width: 70px;
+  }
+  
+  .abs.upper {
+    top: 260px;
+    left: calc(50% - 35px);
+    height: 100px;
+  }
+  
+  .abs.lower {
+    top: 360px;
+    left: calc(50% - 35px);
+    height: 100px;
+  }
+  
+  .oblique {
+    top: 360px;
+    width: 30px;
+    height: 100px;
+  }
+  
+  .oblique.left {
+    left: 140px;
+  }
+  
+  .oblique.right {
+    right: 140px;
+  }
+  
+  .biceps {
+    width: 40px;
+    height: 100px;
+    top: 160px;
+  }
+  
+  .biceps.left {
+    left: 40px;
+  }
+  
+  .biceps.right {
+    right: 40px;
+  }
+  
+  .forearm {
+    width: 35px;
+    height: 100px;
+    top: 260px;
+  }
+  
+  .forearm.left {
+    left: 30px;
+  }
+  
+  .forearm.right {
+    right: 30px;
+  }
+  
+  .thigh {
+    top: 460px;
+    width: 90px;
+    height: 150px;
+  }
+  
+  .thigh.left {
+    left: 60px;
+  }
+  
+  .thigh.right {
+    right: 60px;
+  }
+  
+  .calf {
+    top: 610px;
+    width: 70px;
+    height: 130px;
+  }
+  
+  .calf.left {
+    left: 80px;
+  }
+  
+  .calf.right {
+    right: 80px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .controls label {
+    margin-right: 10px;
+  }
+
+  /* lisa */
+ 

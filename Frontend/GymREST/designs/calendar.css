@@ -1,0 +1,193 @@
+/* üldine teema */
+.custom-calendar {
+    height: 600px;
+    background-color: #ebd8d3; 
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    overflow: auto;  
+  }
+  
+/* pealkiri + nupud */
+.custom-calendar .vuecal-header,
+.custom-calendar .vuecal-nav {
+    background-color: #e71333;
+    color: #ffffff;
+}
+  
+.vuecal-header .vuecal-nav-button,
+/* nädalapäeva taust */
+.custom-calendar .vuecal-day {
+    background-color: #FFF0F5; 
+    color: #333333; 
+}
+  
+/* tänane päev erinev teistest */
+.custom-calendar .vuecal-day--today {
+    background-color: #fa3195; 
+    color: #ffffff; 
+}
+  
+/* sündmused */
+.custom-calendar .vuecal-event {
+    background-color: #FFB6C1; 
+    color: #333333; 
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: block;
+    z-index: 10;
+}
+  
+/* Hover efekt sündmustel */
+.custom-calendar .vuecal-event:hover {
+    background-color: #FF69B4; 
+    color: #ffffff; 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 8px;
+    background: #95b2d0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: #ccc;
+  }
+
+
+.custom-calendar .vuecal--month-view .vuecal__cell {height: 80px;}
+
+.custom-calendar .vuecal--month-view .vuecal__cell-content {
+  justify-content: flex-start;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.vuecal--month-view .vuecal__cell-date {padding: 4px;}
+.vuecal--month-view .vuecal__no-event {display: none;}
+
+.vuecal__now-line {color: #06c;}
+
+.back-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background:-moz-element();
+  border: none;
+  color: #000000;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.modal-content { 
+  position: relative;
+}
+
+form label,
+form input,
+form textarea {
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="datetime-local"] {
+  width: 100%;
+}
+
+textarea {
+  height: 50px;
+  resize: vertical;
+  
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form div:not(:empty) {
+  visibility: visible;
+}
+
+
+form div[style*="display: none"] {
+  visibility: hidden;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  background-color: #aaa;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.vuecal__event.event {background-color: rgba(227, 167, 167, 0.9);border: 1px solid rgb(0, 0, 0);color: #fff;}
+.vuecal__event.training {background-color: rgba(155, 204, 162, 0.9);border: 1px solid rgb(0, 0, 0);color: #fff;}

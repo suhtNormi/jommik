@@ -1,0 +1,52 @@
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  .edit-btn, .delete-btn, .choose-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .edit-btn {
+    background-color: lightseagreen;
+    color: black;
+    margin-right: 5px;
+  }
+  .edit-btn:hover {
+    background-color: darkorange;
+  }
+  .delete-btn {
+    background-color: red;
+    color: black;
+  }
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  .choose-btn {
+    margin-right: 5px;
+    background-color: #fabfbf;
+    color: black;
+  }
+  .choose-btn:hover {
+    background-color: darkgreen;
+  }
+
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  .top-right-button {
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    padding: 10px 20px; 
+    background-color: darkred; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  

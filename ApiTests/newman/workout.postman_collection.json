@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "efa656c2-908c-4603-b25f-342c0b5fbde6",
+		"name": "workout",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38239281"
+	},
+	"item": [
+		{
+			"name": "GetPlanById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Test Plan Title\", function () {",
+							"    pm.response.to.have.jsonBody(\"title\");",
+							"    pm.expect(pm.response.json().title).to.eql(\"Edasijõudnud lihasmassi kasvatamine\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/Plans/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Plans",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestFilterFunction",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test goal and level filter function\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].goal).to.eql(\"Kaalu langetamine\");",
+							"    pm.expect(jsonData[0].level).to.eql(\"Algaja\");",
+							"    pm.expect(jsonData[0].title).to.eql(\"Algaja kaalulangetamine\");",
+							"    pm.expect(jsonData[0].description).to.eql(\"Treeningkava, mis aitab algajatel kaalu langetada, keskendudes tasakaalustatud harjutustele ja madala intensiivsusega kardio.\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/Plans/filter?goal=Kaalu langetamine&level=Algaja",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Plans",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "goal",
+							"value": "Kaalu langetamine"
+						},
+						{
+							"key": "level",
+							"value": "Algaja"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #c1d3e8;
+    overflow-y: auto; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #d8dfe7;
+}
+
+.form {
+    background-color: #ed08ed;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, select, .input-f, .range-f {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d9e6;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus, .input-f:focus, .range-f:focus {
+    border-color: #0e0e0f;
+    outline: none;
+}
+
+.range-f {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background-color: #d1d9e6;
+    border-radius: 5px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.range-f::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.range-f::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #fabfbf;
+    color: rgb(0, 0, 0);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e5b5b5;
+}
+
+p {
+    font-size: 14px;
+    color: #010000;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.radio-label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+input[type="radio"] {
+    margin: 0;
+    accent-color: #ff8000;
+}
+
+  
