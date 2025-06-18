@@ -1,0 +1,1 @@
+This repo contains a webapp of a gym application that analyzes injury risk based on the training load and also a doc of a parcel locker system subsystem. In the parcel locker system doc i personally designed and built the physical database and all of the tables. 
